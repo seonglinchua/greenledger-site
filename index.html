@@ -197,8 +197,8 @@
 
           <div class="cta-left">
             <span class="section-label section-label-light">Advisory Services</span>
-            <h2>Speak with our team</h2>
-            <p class="cta-sub">Our advisors work with institutional investors, corporate treasury functions, and development finance institutions to design and implement sustainable finance strategies.</p>
+            <h2>Speak with our advisory team</h2>
+            <p class="cta-sub">Our advisors work with institutional investors, corporate treasury functions, and development finance institutions to structure and implement sustainable finance strategies.</p>
 
             <div class="cta-contact-items">
               <div class="cta-contact-item">
@@ -215,21 +215,28 @@
               </div>
             </div>
 
-            <div class="cta-trust">
-              <div class="cta-trust-item">
-                <span class="cta-trust-num">$2.4B+</span>
-                <span class="cta-trust-desc">assets advised on sustainable strategies</span>
+            <div class="cta-metrics">
+              <div class="cta-metric">
+                <span class="cta-metric-num">$2.4B+</span>
+                <span class="cta-metric-desc">in assets advised on sustainable strategies</span>
               </div>
-              <div class="cta-trust-item">
-                <span class="cta-trust-num">48h</span>
-                <span class="cta-trust-desc">typical response time for all enquiries</span>
+              <div class="cta-metric">
+                <span class="cta-metric-num">48h</span>
+                <span class="cta-metric-desc">typical response time for all enquiries</span>
+              </div>
+              <div class="cta-metric">
+                <span class="cta-metric-num">60+</span>
+                <span class="cta-metric-desc">institutional mandates across 18 markets</span>
               </div>
             </div>
           </div>
 
           <div class="cta-right">
             <div class="cta-form-card">
-              <h3>Submit an enquiry</h3>
+              <div class="cta-form-header">
+                <h3>Submit an enquiry</h3>
+                <p>Fields marked <span class="required">*</span> are required</p>
+              </div>
               <form class="contact-form" id="contact-form" novalidate>
                 <div class="form-row">
                   <div class="form-group">
@@ -245,41 +252,43 @@
                   <label for="email">Work email <span class="required">*</span></label>
                   <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
-                <div class="form-group">
-                  <label for="role">Organisation type <span class="required">*</span></label>
-                  <select id="role" name="role" required>
-                    <option value="" disabled selected>Select one</option>
-                    <option value="pension-fund">Pension Fund</option>
-                    <option value="asset-manager">Asset Manager</option>
-                    <option value="endowment">Endowment / Foundation</option>
-                    <option value="corporate">Corporate Treasury</option>
-                    <option value="development-bank">Development Bank / DFI</option>
-                    <option value="wealth">Private Bank / Wealth Manager</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="enquiry-type">Nature of enquiry</label>
-                  <select id="enquiry-type" name="enquiry-type">
-                    <option value="" disabled selected>Select one</option>
-                    <option value="portfolio-advisory">Portfolio advisory</option>
-                    <option value="esg-integration">ESG integration</option>
-                    <option value="reporting">Regulatory reporting (TCFD / CSRD)</option>
-                    <option value="green-bonds">Green bond / sustainability-linked bonds</option>
-                    <option value="methodology">Methodology &amp; data</option>
-                    <option value="other">Other</option>
-                  </select>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="role">Organisation type <span class="required">*</span></label>
+                    <select id="role" name="role" required>
+                      <option value="" disabled selected>Select one</option>
+                      <option value="pension-fund">Pension Fund</option>
+                      <option value="asset-manager">Asset Manager</option>
+                      <option value="endowment">Endowment / Foundation</option>
+                      <option value="corporate">Corporate Treasury</option>
+                      <option value="development-bank">Development Bank / DFI</option>
+                      <option value="wealth">Private Bank / Wealth Manager</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="enquiry-type">Nature of enquiry</label>
+                    <select id="enquiry-type" name="enquiry-type">
+                      <option value="" disabled selected>Select one</option>
+                      <option value="portfolio-advisory">Portfolio advisory</option>
+                      <option value="esg-integration">ESG integration</option>
+                      <option value="reporting">Regulatory reporting (TCFD / CSRD)</option>
+                      <option value="green-bonds">Green bonds / SLBs</option>
+                      <option value="methodology">Methodology &amp; data</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="message">Additional context</label>
-                  <textarea id="message" name="message" rows="4" placeholder="Please describe your objectives or any specific requirements."></textarea>
+                  <textarea id="message" name="message" rows="3" placeholder="Please describe your objectives or any specific requirements."></textarea>
                 </div>
                 <button type="submit" class="btn-primary btn-full">Submit enquiry</button>
                 <p class="form-privacy">All information is treated in strict confidence and processed in accordance with our <a href="#">Privacy Policy</a>.</p>
               </form>
               <div class="form-success" id="form-success" hidden>
                 <p class="form-success-title">Enquiry received</p>
-                <p>Thank you. A member of our advisory team will contact you within two business days.</p>
+                <p>Thank you. A member of our advisory team will be in contact within two business days.</p>
               </div>
             </div>
           </div>
