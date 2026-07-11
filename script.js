@@ -1,21 +1,55 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#site-nav');
-const yearEl = document.querySelector('#year');
+/* GreenLedger — script.js */
 
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
+(function () {
+  'use strict';
 
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(isOpen));
+  // ── Sticky header shadow on scroll ──────────────────────
+  const header = document.getElementById('site-header');
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── Mobile nav toggle ────────────────────────────────────
+  const toggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    navLinks.classList.toggle('open', !expanded);
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
+  // Close mobile nav when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
-}
+
+  // ── Contact form ─────────────────────────────────────────
+  const form = document.getElementById('contact-form');
+  const formSuccess = document.getElementById('form-success');
+
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Simulate submission — replace with real endpoint when ready
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        form.hidden = true;
+        formSuccess.hidden = false;
+      }, 800);
+    });
+  }
+})();
