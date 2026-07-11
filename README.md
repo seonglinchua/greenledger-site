@@ -22,6 +22,19 @@ GreenLedger is a static single-page site — no framework, no build step, no bac
 | Interactivity | Vanilla JavaScript (no dependencies) |
 | Deployment | Any static host (Netlify, Vercel, shared hosting, VPS) |
 
+## Programming languages
+
+The codebase aligns with the stack above. It is made up of:
+
+| Language | Files | Purpose |
+|----------|-------|---------|
+| HTML | `index.html` | Single-page site markup and content structure |
+| CSS | `styles.css` | Visual design, layout, responsive styles, and design tokens |
+| JavaScript | `script.js` | Small progressive enhancements for navigation, scrolling, and form handling |
+| Markdown | `README.md`, `AGENTS.md`, `docs/content-outline.md` | Project documentation and editorial planning |
+
+There are no framework files, package manifests, compiled assets, or backend language files in the repository.
+
 ## File structure
 
 ```
