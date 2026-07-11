@@ -2,10 +2,6 @@
 
 GreenLedger is a static, single-page sustainable finance website for investors, institutions, and businesses. It explains ESG integration, sustainable finance use cases, reporting frameworks, and ways to align capital with long-term environmental and social value.
 
-## Demo
-
-View the deployed site at: <https://seonglinchua.github.io/greenledger-site/>
-
 ## Current status
 
 This repository contains a complete static site implementation. There is no application framework, build step, package manager, backend service, or runtime dependency to install.
@@ -29,6 +25,26 @@ This repository contains a complete static site implementation. There is no appl
 | Interactivity | Dependency-free JavaScript in `script.js` |
 | Documentation | Markdown files in the repository root and `docs/` |
 | Deployment | Static hosting or GitHub Pages via GitHub Actions |
+## Programming languages
+
+The codebase aligns with the stack above. It is made up of:
+
+| Language | Files | Purpose |
+|----------|-------|---------|
+| HTML | `index.html` | Single-page site markup and content structure |
+| CSS | `styles.css` | Visual design, layout, responsive styles, and design tokens |
+| JavaScript | `script.js` | Small progressive enhancements for navigation, scrolling, and form handling |
+| Markdown | `README.md`, `AGENTS.md`, `docs/content-outline.md` | Project documentation and editorial planning |
+
+There are no framework files, package manifests, compiled assets, or backend language files in the repository.
+
+- **Hero section** introducing GreenLedger and its sustainable finance positioning
+- **Why It Matters** section explaining ESG as long-term risk management
+- **Core Pillars** covering Environmental, Social, Governance, and Impact Measurement topics
+- **Use Cases** for institutional investors, corporations, development finance, and wealth advisors
+- **Insights** cards for reports, analysis, and guides
+- **Methodology** section referencing TCFD, GRI, SFDR, and SBTi-aligned standards
+- **Contact / CTA** form with client-side validation and a simulated success state
 
 ## Languages and file types
 
