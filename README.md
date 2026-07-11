@@ -22,6 +22,20 @@ GreenLedger is a static single-page site — no framework, no build step, no bac
 | Interactivity | Vanilla JavaScript (no dependencies) |
 | Deployment | Any static host (Netlify, Vercel, shared hosting, VPS) |
 
+## Programming languages
+
+The codebase aligns with the stack above. It is made up of:
+
+| Language | Files | Purpose |
+|----------|-------|---------|
+| HTML | `index.html` | Single-page site markup and content structure |
+| CSS | `styles.css` | Visual design, layout, responsive styles, and design tokens |
+| JavaScript | `script.js` | Small progressive enhancements for navigation, scrolling, and form handling |
+| Markdown | `README.md`, `AGENTS.md`, `docs/content-outline.md` | Project documentation and editorial planning |
+| YAML | `.github/workflows/static.yml` | GitHub Pages deployment workflow |
+
+There are no framework files, package manifests, compiled assets, or backend language files in the repository.
+
 ## File structure
 
 ```
@@ -31,6 +45,10 @@ greenledger-site/
 ├── script.js           — mobile nav, scroll behaviour, form handling
 ├── docs/
 │   └── content-outline.md   — editorial content plan
+├── .github/
+│   └── workflows/
+│       └── static.yml  — GitHub Pages deployment workflow
+├── .gitkeep            — placeholder file for repository retention
 ├── AGENTS.md           — guidelines for AI agents working in this repo
 └── README.md           — this file
 ```
@@ -72,6 +90,8 @@ All design tokens live in `styles.css` under `:root`:
 ## Deployment
 
 Copy the repo contents to any web root. No build step required.
+
+The repository also includes a GitHub Pages workflow at `.github/workflows/static.yml`. It runs on pushes to `main`, can be triggered manually, uploads the repository as a Pages artifact, and deploys it to GitHub Pages.
 
 For a VPS with nginx, point the server root at the repo directory and ensure `index.html` is served for `/`.
 
