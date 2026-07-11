@@ -38,7 +38,13 @@ The codebase aligns with the stack above. It is made up of:
 
 There are no framework files, package manifests, compiled assets, or backend language files in the repository.
 
-## File structure
+- **Hero section** introducing GreenLedger and its sustainable finance positioning
+- **Why It Matters** section explaining ESG as long-term risk management
+- **Core Pillars** covering Environmental, Social, Governance, and Impact Measurement topics
+- **Use Cases** for institutional investors, corporations, development finance, and wealth advisors
+- **Insights** cards for reports, analysis, and guides
+- **Methodology** section referencing TCFD, GRI, SFDR, and SBTi-aligned standards
+- **Contact / CTA** form with client-side validation and a simulated success state
 
 ## Languages and file types
 
